@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-299$ab&*8^tida-9)i31ye55=st08)9bz(@aeo*c!*dy^0g2q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', ]
 
 
 # Application definition
@@ -99,7 +99,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "car_rent.wsgi.application"
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', ]
 
 
 # Database
@@ -159,11 +158,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'image')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'image')
